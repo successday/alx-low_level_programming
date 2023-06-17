@@ -26,6 +26,7 @@ if (digit1 + digit2 + digit3 != 24)
 putchar(',');
 putchar(' ');
 }
+}
 digit3++;
 }
 digit2++;
