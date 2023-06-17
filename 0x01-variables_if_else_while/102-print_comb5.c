@@ -33,4 +33,3 @@ firstDigit++;
 putchar('\n');
 return (0);
 }
-
