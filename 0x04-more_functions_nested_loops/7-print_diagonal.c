@@ -19,7 +19,7 @@ for (space = 0; space < n; space++)
 {
 if (space == postn)
 _putchar('\\');
-else if (postn < space)
+else if (space < postn)
 _putchar(' ');
 }
 _putchar('\n');
