@@ -16,5 +16,5 @@ if (num != 2 && num != 4)
 _putchar(num + '0');
 }
 }
--putchar('\n');
+_putchar('\n');
 }
