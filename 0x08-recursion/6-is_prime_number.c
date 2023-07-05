@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * is_divisible - tests whether the number is divisible
+ * is_prime_number - is the integer a prime number
  * @n: the number being tested
- * @div: the divisor
  *
- * Description: The function finds whether the number is divisible
- * by 2 and return the value
+ * Description: The function tests whether is a prime number
+ * and returns the appropriate value.
  * Return: result
  */
 int is_prime_number(int n)
