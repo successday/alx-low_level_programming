@@ -11,7 +11,7 @@ if (d)
 {
 if (d->name)
 free(d->name);
-if (d->name)
+if (d->owner)
 free(d->owner);
 free(d);
 }
