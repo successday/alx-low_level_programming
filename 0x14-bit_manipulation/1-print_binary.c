@@ -1,20 +1,24 @@
 #include "main.h"
 
 /**
- * get_bit - returns the value of a bit at a given index
- * @num: number which contains the bit
- * @index: index at which bit must be found
- *
- * Return: bit (Success) or -1 (error)
+ * print_binary - converts the decimal format number into binary
+ * @n: decimal number
  */
-int get_bit(unsigned long int num, unsigned int index)
+void print_binary(unsigned long int n)
 {
-	int bit;
+	int temp;
+	static int count;
 
-	if (index > (sizeof(unsigned long int) * 8 - 1))
-		return (-1);
+	if (n == 0 && count > 0)
+		return;
+	else if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 
-	bit = (num >> index) & 1;
-
-	return (bit);
+	temp = (n & 1);
+	count++;
+	print_binary(n >>= 1);
+	_putchar('0' + temp);
 }
